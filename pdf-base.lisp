@@ -301,9 +301,9 @@
 
 (def-pdf-op set-rgb-fill (r g b) "~5f ~5f ~5f rg~%")
 
-(def-pdf-op set-cymk-stroke (c y m k) "~5f ~5f ~5f ~5f K~%")
+(def-pdf-op set-cmyk-stroke (c m y k) "~5f ~5f ~5f ~5f K~%")
 
-(def-pdf-op set-cymk-fill (c y m k) "~5f ~5f ~5f ~5f k~%")
+(def-pdf-op set-cmyk-fill (c m y k) "~5f ~5f ~5f ~5f k~%")
 
 ;;; Transparency support by Eric Marsden
 ;;; Affects both stroking operations ("CA" op) and non-stroking ("ca" op)
